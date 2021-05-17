@@ -3,8 +3,9 @@
     border-radius: 10px;
     padding: 7px 20px;
     color: $fontColor;
+    border: none;
     display: inline-block;
-    font: normal bold 20px/1 "Roboto", sans-serif;
+    font: normal bold 16px/1 "Roboto", sans-serif;
     text-align: center;
     cursor: pointer;
 }
@@ -16,14 +17,18 @@
     padding: 7px 20px;
     color: $borderFontColor;
     display: inline-block;
-    font: normal bold 20px/1 "Roboto", sans-serif;
+    font: normal bold 16px/1 "Roboto", sans-serif;
     text-align: center;
     cursor: pointer;
 }
 
-@mixin input {
-    width: 50px;
+@mixin input($color){
+    width: auto;
     height: 20px;
     background-color: rgba(196, 196, 196, 0);
     border-radius: 5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid $color;
 }
