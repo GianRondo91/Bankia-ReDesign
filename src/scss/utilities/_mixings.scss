@@ -1,0 +1,29 @@
+@mixin principal-button($backgroundColor, $fontColor) {
+    background: $backgroundColor;
+    border-radius: 10px;
+    padding: 7px 20px;
+    color: $fontColor;
+    display: inline-block;
+    font: normal bold 20px/1 "Roboto", sans-serif;
+    text-align: center;
+    cursor: pointer;
+}
+
+@mixin alternative-button($backgroundColor, $borderFontColor) {
+    background: $backgroundColor;
+    border: 1px solid $borderFontColor;
+    border-radius: 10px;
+    padding: 7px 20px;
+    color: $borderFontColor;
+    display: inline-block;
+    font: normal bold 20px/1 "Roboto", sans-serif;
+    text-align: center;
+    cursor: pointer;
+}
+
+@mixin input {
+    width: 50px;
+    height: 20px;
+    background-color: rgba(196, 196, 196, 0);
+    border-radius: 5px;
+}

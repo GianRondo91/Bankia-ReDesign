@@ -1,0 +1,21 @@
+@use '../../scss/utilities/mixings' as mix;
+@use '../../scss/utilities/variables' as var;
+.login{
+    width: 80%;
+    margin: auto;
+    .login-title{
+        margin-bottom: 20px;
+    }
+    .login-form{
+        display: grid;
+        input{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border: none;
+        }
+        .login-input-email,
+        .login-input-password{
+            outline: none;
+        }
+    }
+}
