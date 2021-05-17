@@ -32,3 +32,9 @@
     border-right: none;
     border-bottom: 1px solid $color;
 }
+
+@mixin center ($width){
+    width: $width;
+    margin-right: auto;
+    margin-left: auto;
+}

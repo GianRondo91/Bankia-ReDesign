@@ -1,0 +1,43 @@
+@use '../../scss/utilities/variables' as var;
+@use '../../scss/utilities/mixings' as mix;
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: -300px;
+    width: 300px;
+    transition: all 0.5s;
+    background-color: var.$white;
+    z-index: 1;
+    &.is-open {
+        right: 0;
+    }
+    .close-icon{
+        position: relative;
+        left: 10px;
+        font-size: 14px;
+        top: var.$size-j;
+    }
+    .nav{
+        @include mix.center(auto);
+        height: 90%;
+        margin-top: var.$mp-nn;
+        text-align: center;
+        padding-left: 0px;
+        .nav-item{
+            width: var.$per-10;
+            text-align: center;
+            margin-bottom: var.$size-q;
+            list-style: none;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            &:hover{
+                background-color: var.$green-bankia;
+                color: var.$white;
+                width: auto;
+                border-radius: 5px;
+            }
+        }
+    }
+}
