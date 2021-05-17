@@ -2,5 +2,7 @@
 @forward './views/Home/Home.scss';
 
 /*COMPONENTS*/
+@forward './components/Header/Header.scss';
+@forward './components/MenuToggle/MenuToggle.scss';
 @forward  './components/Login/Login.scss';
 @forward './components/Register/Register.scss';
