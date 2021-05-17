@@ -15,8 +15,8 @@
     }
     .close-icon{
         position: relative;
-        left: 10px;
-        font-size: 14px;
+        left: 260px;
+        font-size: 12px;
         top: var.$size-j;
     }
     .nav{
@@ -25,7 +25,10 @@
         margin-top: var.$mp-nn;
         text-align: center;
         padding-left: 0px;
-        .nav-item{
+        a{
+            text-decoration: none;
+            color: var.$black;
+            .nav-item{
             width: var.$per-10;
             text-align: center;
             margin-bottom: var.$size-q;
@@ -38,6 +41,7 @@
                 width: auto;
                 border-radius: 5px;
             }
+        }
         }
     }
 }

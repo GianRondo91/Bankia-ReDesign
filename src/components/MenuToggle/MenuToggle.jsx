@@ -1,4 +1,4 @@
-import React,{ useState } from 'react';
+import React, { useState } from 'react';
 import { Nav, NavItem } from 'reactstrap';
 
 import classNames from 'classnames';
@@ -13,23 +13,23 @@ const MenuToggle = () => {
     });
 
     const toggleMenu = () => {
-        setState({ isOpen: !state.isOpen});
+        setState({ isOpen: !state.isOpen });
     };
 
-    return(
+    return (
         <div className="menuToggle">
             <div className="menuToggle-icon" onClick={toggleMenu}>
                 <FontAwesomeIcon icon={faBars} />
             </div>
-            <div className={classNames("sidebar", {"is-open": state.isOpen})}>
-                <FontAwesomeIcon icon={faTimes} onClick={toggleMenu} className="close-icon"/>
+            <div className={classNames("sidebar", { "is-open": state.isOpen })}>
+                <FontAwesomeIcon icon={faTimes} onClick={toggleMenu} className="close-icon" />
                 <Nav>
-                    <NavItem>Particulares</NavItem>
-                    <NavItem>Cuentas y tarjetas</NavItem>
-                    <NavItem>Ahorro e Inversión</NavItem>
-                    <NavItem>Financiación</NavItem>
-                    <NavItem>Seguros</NavItem>
-                    <NavItem>Ofertas Especiales</NavItem>
+                    <a href="/"><NavItem>Particulares</NavItem></a>
+                    <a href="/banca-personal"><NavItem>Cuentas y tarjetas</NavItem></a>
+                    <a href="/banca-privada"><NavItem>Ahorro e Inversión</NavItem></a>
+                    <a href="/"><NavItem>Financiación</NavItem></a>
+                    <a href="/"><NavItem>Seguros</NavItem></a>
+                    <a href="/"><NavItem>Ofertas Especiales</NavItem></a>
                 </Nav>
             </div>
         </div>

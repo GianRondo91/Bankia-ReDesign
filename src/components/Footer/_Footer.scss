@@ -1,0 +1,34 @@
+.footer{  
+    font-size: 14px;
+    .footer-columns{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        .footer-column{
+            list-style: none;
+            font-weight: 300;
+            .footer-double-column{
+                display: flex;
+                justify-content: space-around;
+                .column-right{
+                    width: 160px;
+                    margin-left: 80px;
+                }
+            }
+            .column-icons{
+                display: flex;
+                justify-content: space-around;
+            }
+            .footer-column-title{
+                font-weight: 700;
+            }
+            li{
+                cursor: pointer;
+            }
+        }  
+        
+    }
+    .footer-lagacy{
+        text-align: center;
+    }
+}

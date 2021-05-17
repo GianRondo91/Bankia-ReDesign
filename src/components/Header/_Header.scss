@@ -3,6 +3,13 @@
     justify-content: space-between;
     padding: 10px 30px 10px 30px;
     align-items: center;
+
+    position: fixed;
+    height: 40px;
+    width: 1380px;
+    z-index: 1;
+    background-color: white;
+    
     .home-header-logo {
         background-image: url('../../images/logo_BANKIA_CAIXA.svg');
         width: 300px;

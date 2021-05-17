@@ -5,7 +5,7 @@ import MenuToggle from '../MenuToggle/MenuToggle';
 const Header = () => {
     return(
         <div className="header-home">
-            <div className="home-header-logo"></div>
+            <a href="/" className="home-header-logo"> </a>
             <div className="home-header-toggle">
                 <MenuToggle/>
             </div>

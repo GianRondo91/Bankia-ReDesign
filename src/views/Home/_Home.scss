@@ -4,24 +4,60 @@
 .home{
     width: 1440px;
     margin: auto;
-    
     .home-content{
         background-image: url('../../images/home-content.jpg');
         animation-direction: reverse;
         width: 1440px;
         margin: auto;
-        height: 750px;
+        height: 800px;
         //transform: scaleX(-1);
         .login-register{
-            background-color: rgba(255, 255, 255, 0.8)
-            ;
+            background-color: rgba(255, 255, 255, 0.8);
             border-radius: 12px;
             width: 300px;
             height: 300px;
             position: relative;
-            top: 80px;
+            top: 140px;
             left: 1042px;
             display: flex;
+        }
+    }
+    .home-body{
+        height: auto;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        .home-body-container{
+            width: 80%;
+            margin: auto;
+            height: 400px;
+            //background-color: pink;
+            .atm-img{
+                background-image: url('../../images/RedCajeros_Home_370x250.jpg');
+            }
+            .payment-bizum{
+                .payment-bizum-img{
+                    background-image: url('../../images/Bizum_370x250_nov20.jpg');
+                }
+            }
+            .payment-mobile{
+                .payment-mobile-img{
+                    background-image: url('../../images/PAGO_MOVIL_370x250_nov20.jpg');
+                }
+            }
+            .promotion-img{
+                background-image: url('../../images/promos.jpg');
+                justify-content: space-between;
+            }
+        }
+        .payments{
+            //background-color: red;
+            display: flex;
+            justify-content: space-around;
+        }
+        .home-body-img{
+            width: 300px;
+            height: 200px;
+            background-size: contain;
         }
     }
 }
