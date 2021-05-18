@@ -12,6 +12,56 @@ const Home = () => {
                 <div className="login-register">
                     <Login/>
                 </div>
+                <div className="home-selectors">
+                    <div className="selector-left selector">
+                        <div className="selector-img selector-images">
+                            <div className="img"></div>
+                        </div>
+                        <div className="selector-content">
+                            <div className="selector-content-center">
+                                <div className="selector-title">
+                                    Recomendador de tarjetas
+                                </div>
+                                <div className="selector-button">
+                                    La mejor tarjeta para mi
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div className="selector-center selector">
+                        <div className="selector-img selector-images">
+                            <div className="img"></div>
+                        </div>
+                        <div className="selector-content">
+                            <div className="selector-content-center">
+                                <div className="selector-title">
+                                    Simulador de Plan de Pensiones
+                                </div>
+                                <div className="selector-button">
+                                    Me interesa
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div className="selector-right selector">
+                        <div className="selector-img selector-images">
+                            <div className="img"></div>
+                        </div>
+                        <div className="selector-content">
+                            <div className="selector-content-center">
+                                <div className="selector-title">
+                                    Comparador de fondos
+                                </div>
+                                <div className="selector-button">
+                                    Saber más
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
             </div>
             <div className="home-body">
                 <div className="atm home-body-container equals-design">

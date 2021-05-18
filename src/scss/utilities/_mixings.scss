@@ -1,9 +1,9 @@
 @mixin principal-button($backgroundColor, $fontColor) {
     background: $backgroundColor;
+    border: 1px solid $backgroundColor;
     border-radius: 10px;
     padding: 7px 20px;
     color: $fontColor;
-    border: none;
     display: inline-block;
     font: normal bold 16px/1 "Roboto", sans-serif;
     text-align: center;
