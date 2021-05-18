@@ -1,5 +1,8 @@
+@use '../../scss/utilities/mixings' as mix;
+@use '../../scss/utilities/variables' as var;
 .footer{  
     font-size: 14px;
+    border-top: 4px solid var.$green-bankia;
     .footer-columns{
         display: flex;
         width: 100%;

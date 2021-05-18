@@ -1,17 +1,15 @@
 @use '../../scss/utilities/mixings' as mix;
 @use '../../scss/utilities/variables' as var;
-
-.home{
+.home {
     width: 1440px;
     margin: auto;
-    .home-content{
+    .home-content {
         background-image: url('../../images/home-content.jpg');
         animation-direction: reverse;
         width: 1440px;
         margin: auto;
         height: 800px;
-        //transform: scaleX(-1);
-        .login-register{
+        .login-register {
             background-color: rgba(255, 255, 255, 0.8);
             border-radius: 12px;
             width: 300px;
@@ -22,42 +20,116 @@
             display: flex;
         }
     }
-    .home-body{
+    .home-body {
         height: auto;
         margin-top: 50px;
         margin-bottom: 20px;
-        .home-body-container{
+        .payments-title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .home-body-container {
             width: 80%;
             margin: auto;
             height: 400px;
-            //background-color: pink;
-            .atm-img{
+            .atm-img {
                 background-image: url('../../images/RedCajeros_Home_370x250.jpg');
             }
-            .payment-bizum{
-                .payment-bizum-img{
+            .payment-bizum {
+                .payment-bizum-img {
                     background-image: url('../../images/Bizum_370x250_nov20.jpg');
+                    width: 500px;
+                    height: 400px;
+                    background-size: cover;
                 }
             }
-            .payment-mobile{
-                .payment-mobile-img{
+            .payment-mobile {
+                .payment-mobile-img {
                     background-image: url('../../images/PAGO_MOVIL_370x250_nov20.jpg');
+                    width: 500px;
+                    height: 400px;
+                    background-size: cover;
                 }
             }
-            .promotion-img{
+            .promotion-img {
                 background-image: url('../../images/promos.jpg');
                 justify-content: space-between;
             }
         }
-        .payments{
-            //background-color: red;
+        .equals-design {
+            display: flex;
+            .panel-left,
+            .panel-right {
+                width: 50%;
+                margin: auto;
+            }
+            .panel-right {
+                .panel-right-content {
+                    width: 80%;
+                    margin: auto;
+                    .atm-title,
+                    .promotion-title {
+                        font-size: 18px;
+                        font-weight: 700;
+                    }
+                    .atm-description,
+                    .promotion-description {
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                    }
+                    .atm-button,
+                    .promotion-button {
+                        @include mix.alternative-button(var.$white,
+                        var.$green-bankia);
+                    }
+                }
+            }
+        }
+        .payments {
+            margin-bottom: 40px;
             display: flex;
             justify-content: space-around;
+            .payment-bizum,
+            .payment-mobile{
+                .payment-content{
+                    position: relative;
+                    bottom: 280px;
+                    width: 500px;
+                    background-color: var.$white;
+                    opacity: 0;
+                    transition: all .3s;
+                    .payment-center{
+                        width: 400px;
+                        margin: auto;
+                        padding-top: 20px;
+                        padding-bottom: 20px;
+                    }
+                    
+                    &:hover{
+                        opacity: .9;
+                    }
+                    .payment-title{
+                        font-size: 18px;
+                        font-weight: 700;
+                    }
+                    .payment-description{
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                    }
+                    .payment-button{
+                        @include mix.alternative-button(var.$white,
+                        var.$green-bankia);
+                    }
+                }
+            }
         }
-        .home-body-img{
+        .home-body-img {
             width: 300px;
             height: 200px;
+            margin: auto;
             background-size: contain;
+            border-radius: 10px;
         }
     }
 }
