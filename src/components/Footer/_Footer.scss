@@ -1,37 +1,138 @@
 @use '../../scss/utilities/mixings' as mix;
 @use '../../scss/utilities/variables' as var;
-.footer{  
+.footer {
     font-size: 14px;
     border-top: 4px solid var.$green-bankia;
-    .footer-columns{
+    .footer-columns {
         display: flex;
         width: 100%;
         justify-content: space-around;
-        .footer-column{
+        .footer-column {
             list-style: none;
             font-weight: 300;
-            .footer-double-column{
+            .footer-double-column {
                 display: flex;
                 justify-content: space-around;
-                .column-right{
+                .column-right {
                     width: 160px;
                     margin-left: 80px;
                 }
             }
-            .column-icons{
+            .column-icons {
                 display: flex;
                 justify-content: space-around;
             }
-            .footer-column-title{
+            .footer-column-title {
                 font-weight: 700;
             }
-            li{
+            li {
                 cursor: pointer;
             }
-        }  
-        
+        }
     }
-    .footer-lagacy{
+    .footer-lagacy {
         text-align: center;
+    }
+}
+
+
+/**
+MEDIA-QUERY
+**/
+
+
+/*----- Escritorio -----*/
+@media (min-width: 1441px) {
+    .footer {
+        width: 1440px;
+        margin: auto;
+    }
+}
+@media (min-width: 1199.98px) {
+
+}
+
+
+/*----- Tablet -----*/
+
+
+/*Portrait*/
+
+@media (min-width: 576px) and (max-width: 991.98px) and (orientation:portrait) {
+    .footer{
+        .footer-columns {
+            display: contents;
+            .footer-column{
+                width: 220px;
+                margin: auto;
+                .footer-double-column{
+                    justify-content: end;
+                    display: contents;
+                    .column-right{
+                        margin-left: 0px;
+                    }
+                }
+                .column-icons{
+                    justify-content: flex-start;
+                    li{
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*landscape*/
+
+@media (min-width: 991.98px) and (max-width: 1199.98px)and (orientation:landscape) {
+
+}
+
+
+/*----- movil -----*/
+
+
+/*Portrait*/
+
+
+/*Default*/
+
+@media (max-width: 575.98px)and (orientation:portrait) {
+    .footer{
+        .footer-columns {
+            display: contents;
+            .footer-column{
+                width: 220px;
+                margin: auto;
+                .footer-double-column{
+                    justify-content: end;
+                    display: contents;
+                    .column-right{
+                        margin-left: 0px;
+                    }
+                }
+                .column-icons{
+                    justify-content: flex-start;
+                    li{
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*landscape*/
+
+@media (min-width: 576px) and (max-width: 991.98px) and (orientation:landscape) {
+    .footer{
+        .footer-columns{
+            .footer-column{
+                padding-left: 10px;
+            }
+        }
     }
 }

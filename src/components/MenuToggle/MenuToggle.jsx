@@ -25,11 +25,11 @@ const MenuToggle = () => {
                 <FontAwesomeIcon icon={faTimes} onClick={toggleMenu} className="close-icon" />
                 <Nav>
                     <a href="/"><NavItem>Particulares</NavItem></a>
-                    <a href="/banca-personal"><NavItem>Cuentas y tarjetas</NavItem></a>
-                    <a href="/banca-privada"><NavItem>Ahorro e Inversión</NavItem></a>
-                    <a href="/"><NavItem>Financiación</NavItem></a>
-                    <a href="/"><NavItem>Seguros</NavItem></a>
-                    <a href="/"><NavItem>Ofertas Especiales</NavItem></a>
+                    <a href="/banca-personal"><NavItem>Banca Personal</NavItem></a>
+                    <a href="/banca-privada"><NavItem>Banca Privada</NavItem></a>
+                    <a href="/"><NavItem>Empresas</NavItem></a>
+                    <a href="/"><NavItem>Pymes y Autónomos</NavItem></a>
+                    <a href="/"><NavItem>Agro</NavItem></a>
                 </Nav>
             </div>
         </div>

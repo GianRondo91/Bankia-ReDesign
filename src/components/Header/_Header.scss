@@ -1,23 +1,90 @@
+@use '../../scss/utilities/mixings' as mix;
+@use '../../scss/utilities/variables' as var;
 .header-home {
     display: flex;
     justify-content: space-between;
-    padding: 10px 30px 10px 30px;
+    //padding: 10px 30px 10px 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     align-items: center;
-
     position: fixed;
     height: 40px;
-    width: 1380px;
+    //width: 1380px;
+    width: 100%;
     z-index: 1;
     background-color: white;
-    
     .home-header-logo {
         background-image: url('../../images/logo_BANKIA_CAIXA.svg');
         width: 300px;
         height: 30px;
         background-repeat: no-repeat;
         background-size: contain;
+        margin-left: 30px;
     }
     .home-header-toggle {
         cursor: pointer;
+        margin-right: 30px;
     }
+}
+
+
+/**
+MEDIA-QUERY
+**/
+
+
+/*----- Escritorio -----*/
+
+@media (min-width: 1441px){
+    .header-home {
+        width: 1440px;
+        margin: auto;
+        position: relative;
+    }
+}
+
+@media (min-width: 1199.98px) {
+
+}
+
+
+/*----- Tablet -----*/
+
+
+/*Portrait*/
+
+@media (min-width: 576px) and (max-width: 991.98px) and (orientation:portrait) {
+
+}
+
+
+/*landscape*/
+
+@media (min-width: 991.98px) and (max-width: 1199.98px)and (orientation:landscape) {
+
+    .header-home {
+        .home-header-logo {
+
+        }
+    }
+}
+
+
+/*----- movil -----*/
+
+
+/*Portrait*/
+
+
+/*Default*/
+
+@media (max-width: 575.98px)and (orientation:portrait) {
+
+}
+
+
+/*landscape*/
+
+@media (min-width: 576px) and (max-width: 991.98px) and (orientation:landscape) {
+
 }
