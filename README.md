@@ -12,6 +12,7 @@
 </p>
 
 </br>
+
 ## Paginá principal
 
 Paginá original
@@ -20,7 +21,7 @@ Paginá original
 Rediseño: 
 ![image](https://user-images.githubusercontent.com/56218293/118810741-8595ba00-b8ac-11eb-8b9b-0df70659dca9.png)
 
-Menu despegable que da acceso a **Banca Personal**
+Menu despegable que da acceso a **Banca Personal y Banca Privada**
 ![image](https://user-images.githubusercontent.com/56218293/118810912-b118a480-b8ac-11eb-8009-90a27796bdd6.png)
 
 ## Banca Personal:
@@ -32,6 +33,8 @@ Rediseño:
 ![image](https://user-images.githubusercontent.com/56218293/118811273-179dc280-b8ad-11eb-8501-0794e02c90a0.png)
 
 ## Banca Privada:
+
+</hr>
 
 Paginá original
 ![image](https://user-images.githubusercontent.com/56218293/118811808-b7f3e700-b8ad-11eb-924b-20d01882b2a0.png)
