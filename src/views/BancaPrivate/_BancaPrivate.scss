@@ -39,8 +39,9 @@
             }
         }
         .service-circles{
-            margin-bottom: var.$size-a;
+            //margin-bottom: var.$size-a;
             .service-circle{
+                height: auto;
                 .service-circle-content{
                     .service-circle-description{
                         height: var.$mp-nn;
