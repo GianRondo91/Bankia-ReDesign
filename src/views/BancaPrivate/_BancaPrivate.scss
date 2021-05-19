@@ -60,6 +60,13 @@ MEDIA-QUERY
 **/
 
 
+@media (min-width: 1441px) {
+    .bancaPrivate-body,
+    .bancaPersonal-body{
+            @include mix.center(nth(var.$medias,
+            5));
+        }
+}
 /*----- Tablet -----*/
 
 
