@@ -2,16 +2,16 @@
 @use '../../scss/utilities/variables' as var;
 
 .login{
-    width: 80%;
+    width: var.$per-8;
     margin: auto;
     .login-title{
-        margin-bottom: 20px;
+        margin-bottom: var.$mp-i;
     }
     .login-form{
         display: grid;
         input{
-            margin-top: 10px;
-            margin-bottom: 10px;
+            margin-top: var.$mp-f;
+            margin-bottom: var.$mp-f;
             
         }
         .login-input-email,

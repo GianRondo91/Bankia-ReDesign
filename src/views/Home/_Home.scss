@@ -1,67 +1,64 @@
 @use '../../scss/utilities/mixings' as mix;
 @use '../../scss/utilities/variables' as var;
 .home {
-    //width: 1440px;
-    width: 100%;
+    width: var.$per-10;
     margin: auto;
     .home-content {
         background-image: url('../../images/home-content.jpg');
         animation-direction: reverse;
-        //width: 1440px;
-        width: 100%;
+        width: var.$per-10;
         margin: auto;
-        height: 800px;
+        height: nth(var.$hundreds, 8);
         .login-register {
             background-color: rgba(255, 255, 255, 0.8);
-            border-radius: 12px;
-            width: 300px;
-            height: 300px;
+            border-radius: var.$mp-g;
+            width: nth(var.$hundreds, 3);
+            height: nth(var.$hundreds, 3);
             position: relative;
-            top: 176px;
-            //left: 998px;
-            left: 60%;
+            top: var.$mp-q + var.$mp-h;
+            left: var.$per-6;
             display: flex;
         }
         .home-selectors {
-            width: 80%;
+            width: var.$per-8;
             margin: auto;
             display: flex;
             justify-content: space-between;
             background-color: rgba(255, 255, 255, 0.8);
             position: relative;
-            height: 140px;
-            top: 360px;
-            border-top-left-radius: 12px;
-            border-top-right-radius: 12px;
+            height: var.$mp-q - var.$mp-i;
+            top: var.$mp-u + var.$mp-l;
+            border-top-left-radius: var.$mp-g;
+            border-top-right-radius: var.$mp-g;
             .selector {
-                width: 80%;
+                width: var.$per-8;
                 margin: auto;
                 display: flex;
-                margin-left: 30px;
+                margin-left: var.$size-p;
                 .selector-images {
-                    width: 20%;
+                    width: var.$per-2;
                     margin: auto;
                     .img {
-                        width: 40px;
-                        height: 40px;
+                        width: var.$size-u;
+                        height: var.$size-u;
                         margin: auto;
                     }
                 }
                 .selector-content {
-                    width: 80%;
+                    width: var.$per-8;
                     .selector-content-center {
-                        width: 80%;
+                        width: var.$per-8;
                         margin: auto;
-                        left: 10%;
+                        left: var.$per-1;
                         position: relative;
                         .selector-title {
-                            font-size: 14px;
-                            font-weight: 600;
+                            font-size: var.$size-i;
+                            font-weight: nth(var.$fw, 6);
                         }
                         .selector-button {
                             @include mix.alternative-button(var.$white,
                             var.$green-bankia);
-                            margin-top: 12px;
+                            margin-top: var.$mp-g;
                             font: normal bold 13px/1 "Roboto", sans-serif;
                             &:hover {
                                 @include mix.principal-button(var.$green-bankia,
@@ -97,33 +94,33 @@
     }
     .home-body {
         height: auto;
-        margin-top: 50px;
-        margin-bottom: 20px;
+        margin-top: var.$size-v;
+        margin-bottom: var.$mp-i;
         .payments-title {
             text-align: center;
-            font-size: 24px;
-            font-weight: 600;
+            font-size: var.$mp-j;
+            font-weight: nth(var.$fw, 6);
         }
         .home-body-container {
-            width: 80%;
+            width: var.$per-8;
             margin: auto;
-            height: 400px;
+            height: nth(var.$hundreds, 4);
             .atm-img {
                 background-image: url('../../images/RedCajeros_Home_370x250.jpg');
             }
             .payment-bizum {
                 .payment-bizum-img {
                     background-image: url('../../images/Bizum_370x250_nov20.jpg');
-                    width: 500px;
-                    height: 400px;
+                    width: nth(var.$hundreds, 5);
+                    height: nth(var.$hundreds, 4);
                     background-size: cover;
                 }
             }
             .payment-mobile {
                 .payment-mobile-img {
                     background-image: url('../../images/PAGO_MOVIL_370x250_nov20.jpg');
-                    width: 500px;
-                    height: 400px;
+                    width: nth(var.$hundreds, 5);
+                    height: nth(var.$hundreds, 4);
                     background-size: cover;
                 }
             }
@@ -136,22 +133,22 @@
             display: flex;
             .panel-left,
             .panel-right {
-                width: 50%;
+                width: var.$per-5;
                 margin: auto;
             }
             .panel-right {
                 .panel-right-content {
-                    width: 80%;
+                    width: var.$per-8;
                     margin: auto;
                     .atm-title,
                     .promotion-title {
-                        font-size: 18px;
-                        font-weight: 700;
+                        font-size: var.$size-k;
+                        font-weight: nth(var.$hundreds, 7);
                     }
                     .atm-description,
                     .promotion-description {
-                        margin-top: 20px;
-                        margin-bottom: 20px;
+                        margin-top: var.$mp-i;
+                        margin-bottom: var.$mp-i;
                     }
                     .atm-button,
                     .promotion-button {
@@ -166,7 +163,7 @@
             }
         }
         .payments {
-            margin-bottom: 40px;
+            margin-bottom: var.$size-u;
             display: flex;
             justify-content: space-around;
             .payment-bizum,
@@ -174,26 +171,26 @@
                 .payment-content {
                     position: relative;
                     bottom: 280px;
-                    width: 500px;
+                    width: nth(var.$hundreds, 5);
                     background-color: var.$white;
                     opacity: 0;
                     transition: all .3s;
                     .payment-center {
-                        width: 80%;
+                        width: var.$per-8;
                         margin: auto;
-                        padding-top: 20px;
-                        padding-bottom: 20px;
+                        padding-top: var.$mp-i;
+                        padding-bottom: var.$mp-i;
                     }
                     &:hover {
                         opacity: .9;
                     }
                     .payment-title {
-                        font-size: 18px;
-                        font-weight: 700;
+                        font-size: var.$size-k;
+                        font-weight: nth(var.$hundreds, 7);
                     }
                     .payment-description {
-                        margin-top: 20px;
-                        margin-bottom: 20px;
+                        margin-top: var.$mp-i;
+                        margin-bottom: var.$mp-i;
                     }
                     .payment-button {
                         @include mix.alternative-button(var.$white,
@@ -207,11 +204,11 @@
             }
         }
         .home-body-img {
-            width: 300px;
-            height: 200px;
+            width: nth(var.$hundreds, 3);
+            height: nth(var.$hundreds, 2);
             margin: auto;
             background-size: contain;
-            border-radius: 10px;
+            border-radius: var.$mp-f;
         }
     }
 }
@@ -228,14 +225,10 @@ MEDIA-QUERY
     .home {
         .home-content,
         .home-body {
-            width: 1440px;
-            margin: auto;
+            @include mix.center(nth(var.$medias,
+            5));
         }
     }
-}
-
-@media (min-width: 1199.98px) {
-
 }
 
 
@@ -248,12 +241,12 @@ MEDIA-QUERY
     .home {
         .home-content {
             .login-register {
-                left: 40%;
+                left: var.$per-4;
             }
             .home-selectors {
-                width: 100%;
-                height: 140px;
-                top: 360px;
+                width: var.$per-10;
+                height: var.$mp-q - var.$mp-i;
+                top: var.$mp-u + var.$mp-l;
             }
         }
         .home-body {
@@ -262,8 +255,8 @@ MEDIA-QUERY
                 .payment-mobile {
                     .payment-bizum-img,
                     .payment-mobile-img {
-                        width: 300px;
-                        height: 300px;
+                        width: nth(var.$hundreds, 3);
+                        height: nth(var.$hundreds, 3);
                     }
                 }
             }
@@ -271,9 +264,9 @@ MEDIA-QUERY
                 .payment-bizum,
                 .payment-mobile {
                     .payment-content {
-                        width: 300px;
-                        bottom: 252px;
-                        height: 200px;
+                        width: nth(var.$hundreds, 3);
+                        bottom: var.$mp-t - var.$mp-c;
+                        height: nth(var.$hundreds, 2);
                     }
                 }
             }
@@ -288,9 +281,9 @@ MEDIA-QUERY
     .home {
         .home-content {
             .home-selectors {
-                width: 90%;
-                height: 140px;
-                top: 360px;
+                width: var.$per-9;
+                height: var.$mp-q - var.$mp-i;
+                top: var.$mp-u + var.$mp-l;
             }
         }
         .home-body {
@@ -299,8 +292,8 @@ MEDIA-QUERY
                 .payment-mobile {
                     .payment-bizum-img,
                     .payment-mobile-img {
-                        width: 400px;
-                        height: 300px;
+                        width: nth(var.$hundreds, 4);
+                        height: nth(var.$hundreds, 3);
                     }
                 }
             }
@@ -308,9 +301,9 @@ MEDIA-QUERY
                 .payment-bizum,
                 .payment-mobile {
                     .payment-content {
-                        width: 400px;
-                        bottom: 252px;
-                        height: 200px;
+                        width: nth(var.$hundreds, 4);
+                        bottom: var.$mp-t - var.$mp-c;
+                        height: nth(var.$hundreds, 2);
                     }
                 }
             }
@@ -332,24 +325,24 @@ MEDIA-QUERY
         .home-content {
             background-size: cover;
             .login-register {
-                left: 20%;
+                left: var.$per-2;
             }
             .home-selectors {
-                width: 100%;
-                height: 193px;
-                top: 307px;
+                width: var.$per-10;
+                height: var.$mp-r;
+                top: var.$mp-u - var.$size-h;
                 .selector {
                     display: grid;
-                    margin-left: 0px;
+                    margin-left: var.$mp-a;
                     text-align: center;
                     .selector-content {
                         .selector-content-center {
                             .selector-title {
-                                margin-top: 10px;
-                                margin-bottom: 10px;
+                                margin-top: var.$mp-f;
+                                margin-bottom: var.$mp-f;
                             }
                             .selector-button {
-                                width: 60px;
+                                width: var.$size-w;
                             }
                         }
                     }
@@ -358,7 +351,7 @@ MEDIA-QUERY
         }
         .home-body {
             .payments-title {
-                margin-top: 80px;
+                margin-top: var.$mp-nn;
             }
             .home-body-container {
                 height: auto;
@@ -370,16 +363,16 @@ MEDIA-QUERY
                     width: auto;
                 }
                 .panel-right {
-                    width: 300px;
+                    width: nth(var.$hundreds, 3);
                     .panel-right-content {
                         display: grid;
                         .promotion-title,
                         .atm-title {
-                            margin-top: 20px;
+                            margin-top: var.$mp-i;
                         }
                         .atm-button,
                         .promotion-button {
-                            width: 80%;
+                            width: var.$per-8;
                             margin: auto;
                         }
                     }
@@ -390,11 +383,11 @@ MEDIA-QUERY
                 .payment-bizum,
                 .payment-mobile {
                     .payment-content {
-                        width: 100%;
+                        width: var.$per-10;
                         margin: auto;
-                        bottom: 246px;
+                        bottom: var.$mp-s + var.$size-m;
                         .payment-center {
-                            width: 80%;
+                            width: var.$per-8;
                         }
                     }
                 }
@@ -404,13 +397,13 @@ MEDIA-QUERY
                 .payment-mobile {
                     .payment-bizum-img,
                     .payment-mobile-img {
-                        width: 400px;
-                        height: 300px;
+                        width: nth(var.$hundreds, 4);
+                        height: nth(var.$hundreds, 3);
                     }
                 }
             }
             .promotions {
-                margin-bottom: 120px;
+                margin-bottom: var.$mp-p - var.$mp-e;
             }
         }
     }
@@ -423,9 +416,9 @@ MEDIA-QUERY
     .home {
         .home-content {
             .home-selectors {
-                width: 100%;
-                height: 140px;
-                top: 360px;
+                width: var.$per-10;
+                height: var.$mp-q - var.$mp-i;
+                top: var.$mp-u + var.$mp-l;
             }
         }
         .home-body {
@@ -434,8 +427,8 @@ MEDIA-QUERY
                 .payment-mobile {
                     .payment-bizum-img,
                     .payment-mobile-img {
-                        width: 360px;
-                        height: 300px;
+                        width: var.$mp-u + var.$mp-l;
+                        height: nth(var.$hundreds, 3);
                     }
                 }
             }
@@ -443,9 +436,9 @@ MEDIA-QUERY
                 .payment-bizum,
                 .payment-mobile {
                     .payment-content {
-                        width: 360px;
-                        bottom: 252px;
-                        height: 200px;
+                        width: var.$mp-u + var.$mp-l;
+                        bottom: var.$mp-t - var.$mp-c;
+                        height: nth(var.$hundreds, 2);
                     }
                 }
             }

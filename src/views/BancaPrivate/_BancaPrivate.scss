@@ -1,0 +1,98 @@
+@use '../../scss/utilities/variables' as var;
+@use '../../scss/utilities/mixings' as mix;
+
+.banca {
+    .bancaPrivate-content {
+        background-image: url('../../images/private.jpeg');
+    }
+    .bancaPrivate-body {
+        .bancaPrivate-containers {
+            margin-top: nth(var.$hundreds, 1);
+            margin-bottom: nth(var.$hundreds, 1);
+            display: grid;
+            .bancaPrivate-container-title {
+                text-align: center;
+                font-size: var.$mp-i;
+                font-weight: nth(var.$fw, 7);
+            }
+            .containers {
+                width: var.$per-9;
+                margin: var.$mp-l auto var.$size-p auto;
+                display: flex;
+                justify-content: center;
+                .container {
+                    width: var.$per-3;
+                    width: auto;
+                    display: flex;
+                    margin: var.$size-p;
+                    .container-img {
+                        width: var.$per-2;
+                        margin: auto;
+                        font-size: var.$mp-j;
+                        color: var.$green-bankia;
+                    }
+                    .container-description {
+                        width: var.$per-8;
+                        margin: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/**
+MEDIA-QUERY
+**/
+
+
+/*----- Tablet -----*/
+
+
+/*Portrait*/
+
+@media (min-width: 576px) and (max-width: 991.98px) and (orientation:portrait) {
+    .banca {
+        .bancaPrivate-body {
+            .bancaPrivate-containers {
+                .containers {
+                    .container{
+                        margin: var.$mp-l 6px var.$size-p 6px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*----- movil -----*/
+
+
+/*Portrait*/
+
+
+/*Default*/
+
+@media (max-width: 575.98px)and (orientation:portrait) {
+    .banca {
+        .bancaPrivate-content {
+            background-image: url('../../images/private.jpeg');
+        }
+        .bancaPrivate-body {
+            .bancaPrivate-containers {
+                margin-top: nth(var.$hundreds, 1);
+                margin-bottom: nth(var.$hundreds, 1);
+                display: grid;
+                .bancaPrivate-container-title {
+                    text-align: center;
+                    font-size: var.$mp-i;
+                    font-weight: nth(var.$fw, 7);
+                }
+                .containers {
+                    display: grid;
+                }
+            }
+        }
+    }
+}

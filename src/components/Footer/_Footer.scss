@@ -1,21 +1,21 @@
 @use '../../scss/utilities/mixings' as mix;
 @use '../../scss/utilities/variables' as var;
 .footer {
-    font-size: 14px;
-    border-top: 4px solid var.$green-bankia;
+    font-size: var.$size-i;
+    border-top: var.$mp-c solid var.$green-bankia;
     .footer-columns {
         display: flex;
-        width: 100%;
+        width: var.$per-10;
         justify-content: space-around;
         .footer-column {
             list-style: none;
-            font-weight: 300;
+            font-weight: nth(var.$fw, 3);
             .footer-double-column {
                 display: flex;
                 justify-content: space-around;
                 .column-right {
-                    width: 160px;
-                    margin-left: 80px;
+                    width: var.$mp-q;
+                    margin-left: var.$mp-nn;
                 }
             }
             .column-icons {
@@ -23,7 +23,7 @@
                 justify-content: space-around;
             }
             .footer-column-title {
-                font-weight: 700;
+                font-weight: nth(var.$fw, 7);
             }
             li {
                 cursor: pointer;
@@ -40,21 +40,14 @@
 MEDIA-QUERY
 **/
 
-
 /*----- Escritorio -----*/
 @media (min-width: 1441px) {
     .footer {
-        width: 1440px;
-        margin: auto;
+        @include mix.center(nth(var.$medias, 5));
     }
 }
-@media (min-width: 1199.98px) {
-
-}
-
 
 /*----- Tablet -----*/
-
 
 /*Portrait*/
 
@@ -63,19 +56,19 @@ MEDIA-QUERY
         .footer-columns {
             display: contents;
             .footer-column{
-                width: 220px;
+                width: var.$mp-s;
                 margin: auto;
                 .footer-double-column{
                     justify-content: end;
                     display: contents;
                     .column-right{
-                        margin-left: 0px;
+                        margin-left: var.$mp-a;
                     }
                 }
                 .column-icons{
                     justify-content: flex-start;
                     li{
-                        margin-right: 20px;
+                        margin-right: var.$mp-i;
                     }
                 }
             }
@@ -104,19 +97,19 @@ MEDIA-QUERY
         .footer-columns {
             display: contents;
             .footer-column{
-                width: 220px;
+                width: var.$mp-s;
                 margin: auto;
                 .footer-double-column{
                     justify-content: end;
                     display: contents;
                     .column-right{
-                        margin-left: 0px;
+                        margin-left: var.$mp-a;
                     }
                 }
                 .column-icons{
                     justify-content: flex-start;
                     li{
-                        margin-right: 20px;
+                        margin-right: var.$mp-i;
                     }
                 }
             }
@@ -131,7 +124,7 @@ MEDIA-QUERY
     .footer{
         .footer-columns{
             .footer-column{
-                padding-left: 10px;
+                padding-left: var.$mp-f;
             }
         }
     }

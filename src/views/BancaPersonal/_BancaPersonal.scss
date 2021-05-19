@@ -1,0 +1,197 @@
+@use '../../scss/utilities/variables' as var;
+@use '../../scss/utilities/mixings' as mix;
+.banca {
+    .banca-content {
+        background-image: url('../../images/personal.jpeg');
+        height: nth(var.$hundreds, 6);
+        background-size: cover;
+    }
+    .bancaPersonal-body {
+        .service-title {
+            margin-top: nth(var.$hundreds , 1);
+            text-align: center;
+            .personal-title {
+                font-size: var.$mp-i;
+                font-weight: nth(var.$fw, 6);
+            }
+        }
+        .service-cards {
+            width: var.$per-6;
+            margin: var.$size-p auto var.$size-p auto;
+            display: grid;
+            grid-template-columns: var.$per-5 var.$per-5;
+            grid-template-rows: nth(var.$hundreds , 1) nth(var.$hundreds , 1);
+            .service-card {
+                display: flex;
+                justify-content: space-between;
+                .service-card-img {
+                    width: var.$per-2;
+                    margin: auto;
+                    font-size: var.$size-q;
+                    color: var.$green-bankia;
+                }
+                .service-card-description {
+                    width: var.$per-6;
+                    margin: auto;
+                }
+                &:hover {
+                    background-color: var.$green-bankia;
+                    cursor: pointer;
+                    border-radius: var.$mp-g;
+                    .service-card-img,
+                    .service-card-description {
+                        color: var.$white;
+                    }
+                }
+            }
+        }
+        .service-circles {
+            display: flex;
+            justify-content: center;
+            width: var.$per-10;
+            margin: nth(var.$hundreds , 1) auto nth(var.$hundreds , 1) auto;
+            .service-circle {
+                width: var.$per-2;
+                margin: auto;
+                height: nth(var.$hundreds, 5);
+                .connect {
+                    background-image: url('../../images/connect.svg');
+                }
+                .grandma {
+                    background-image: url('../../images/gradma.svg');
+                }
+                .client {
+                    background-image: url('../../images/client.svg');
+                }
+                .investment {
+                    background-image: url('../../images/investment.svg');
+                }
+                .service-circle-img {
+                    width: nth(var.$hundreds , 1);
+                    height: var.$mp-nn;
+                    margin: auto;
+                    background-size: cover;
+                }
+                .service-circle-content {
+                    text-align: center;
+                    .service-circle-title {
+                        font-size: var.$mp-h;
+                        font-weight: nth(var.$fw, 6);
+                        width: auto;
+                        height: var.$mp-n + var.$mp-c;
+                        margin-top: var.$mp-i;
+                        margin-bottom: var.$mp-i;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                    }
+                    .service-circle-description {
+                        width: auto;
+                        height: var.$mp-t + var.$mp-c;
+                        font-size: var.$size-i;
+                        margin-bottom: var.$mp-f;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                    }
+                    .service-circle-button {
+                        @include mix.alternative-button(var.$white,
+                        var.$green-bankia);
+                        &:hover {
+                            @include mix.principal-button(var.$green-bankia,
+                            var.$white);
+                        }
+                    }
+                }
+                &:hover {
+                    // border-radius: 200px 0px 115px 5px / 243px 0px 136px 0px;
+                    border-radius: 200px 0px 200px 5px / 243px 0px 238px 0px;
+                    background-color: var.$green-bankia;
+                }
+            }
+        }
+    }
+}
+
+
+/**
+MEDIA-QUERY
+**/
+
+/*Portrait*/
+
+@media (min-width: 576px) and (max-width: 991.98px) and (orientation:portrait) {
+    .banca {
+        .bancaPersonal-body {
+            .service-circles {
+                height: var.$mp-x;
+                .service-circle {
+                    height: var.$per-10;
+                    .service-circle-content {
+                        margin-bottom: nth(var.$hundreds , 1);
+                        .service-circle-title {
+                            height: nth(var.$hundreds , 1);
+                        }
+                        .service-circle-description {
+                            height: var.$mp-v - var.$size-w;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*----- movil -----*/
+
+/*Portrait*/
+
+/*Default*/
+
+@media (max-width: 575.98px)and (orientation:portrait) {
+    .banca {
+        .bancaPersonal-body {
+            .service-cards {
+                width: var.$per-10;
+            }
+            .service-circles {
+                display: grid;
+                .service-circle {
+                    width: var.$per-5;
+                    margin-bottom: var.$mp-nn;
+                    height: auto;
+                    .service-circle-content {
+                        .service-circle-title {
+                            margin-bottom: var.$mp-a;
+                        }
+                        .service-circle-description {
+                            height: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*landscape*/
+
+@media (min-width: 576px) and (max-width: 991.98px) and (orientation:landscape) {
+    .banca {
+        .bancaPersonal-body {
+            .service-circles {
+                height: nth(var.$hundreds, 6);
+                .service-circle {
+                    height: var.$per-10;
+                    .service-circle-content {
+                        margin-bottom: nth(var.$hundreds , 1);
+                        .service-circle-description {
+                            height: var.$mp-u + var.$mp-l;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
